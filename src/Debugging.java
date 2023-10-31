@@ -6,16 +6,17 @@ public class Debugging {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter first integer: ");
-        int num1 = scan.nextInt();
+        double num1 = scan.nextDouble();
 
         System.out.print("Enter second integer: ");
-        int num2 = scan.nextInt();
+        double num2 = scan.nextDouble();
 
-        double quotient = (double) num1 / num2;               // Line A
-        int sum = num1 + num2;                       // Line B
+        double quotient = num1 / num2;               // Line A
+        double sum = num1 + num2;                       // Line B
 
         System.out.println("The quotient is " + quotient);
         System.out.println("The sum is " + sum);
+
     }
 
 
