@@ -30,5 +30,7 @@ public class ExactChange {
         System.out.println(dimes + " dime(s)");
         System.out.println(nickels + " nickel(s)");
         System.out.println(pennies + " penny(ies)");
+        System.out.println();
+        System.out.println("I changed this haha");
     }
 }
