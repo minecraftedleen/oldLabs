@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class ExactChange {
     public static void main(String[] args) {
-        final double QCONST = 0.25;
-        final double DCONST = 0.10;
-        final double NCONST = 0.05;
-        final double PCONST = 0.01;
+        final double QCNST = 0.25;
+        final double DCNST = 0.10;
+        final double NCNST = 0.05;
+        final double PCNST = 0.01;
         int quarters;
         int dimes;
         int nickels;
@@ -16,19 +16,19 @@ public class ExactChange {
 
         System.out.print("Please enter an amount in dollars and cents: ");
         cash = scan.nextDouble();
-        quarters = (int) (cash / QCONST);
-        cash %= QCONST;
-        dimes = (int) (cash / DCONST);
-        cash %= DCONST;
-        nickels = (int) (cash / NCONST);
-        cash %= NCONST;
-        pennies = (int) (cash / PCONST + 0.5);
-        cash %= PCONST;
+        quarters = (int) (cash / QCNST);
+        cash %= QCNST;
+        dimes = (int) (cash / DCNST);
+        cash %= DCNST;
+        nickels = (int) (cash / NCNST);
+        cash %= NCNST;
+        pennies = (int) (cash / PCNST + 0.5);
+        cash %= PCNST;
         minCoins = quarters + dimes + nickels + pennies;
         System.out.println("The minimum number of coins is: " + minCoins);
-        System.out.println(quarters + " quarters");
-        System.out.println(dimes + " dimes");
-        System.out.println(nickels + " nickels");
-        System.out.println(pennies + " pennies");
+        System.out.println(quarters + " quarter(s)");
+        System.out.println(dimes + " dime(s)");
+        System.out.println(nickels + " nickel(s)");
+        System.out.println(pennies + " penny(ies)");
     }
 }
